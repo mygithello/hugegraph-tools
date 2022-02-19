@@ -1,0 +1,10 @@
+#!/bin/bash
+# /data/soft/jdk/bin/java -Dtools.home.path=/data/soft/hugegraph-tools -Xms512m -Xmx2470m -cp /data/soft/hugegraph-tools/lib:/data/soft/jdk/lib/ext:/data/soft/jdk/jre/lib/ext/hugegraph-tools-*.jar -Djava.ext.dirs=/data/soft/hugegraph-tools/lib:/data/soft/jdk/lib/ext:/data/soft/jdk/jre/lib/ext/  com.baidu.hugegraph.cmd.HugeGraphCommand --graph redchamber --user admin --password admin graph-clear -c I\'m\ sure\ to\ delete\ all\ data
+
+# $URL_ARG $GRAPH_ARG $USER_ARG $PASSWORD_ARG $TIMEOUT_ARG $TRUST_STORE_FILE_ARG $TRUST_STORE_PASSWORD_ARG "$@"
+
+java -Dtools.home.path=/data/soft/hugegraph-tools \
+-Xms512m -Xmx2470m -cp \
+hugegraph-tools-1.6.0.jar \
+com.baidu.hugegraph.cmd.HugeGraphCommand \
+--graph relation --user admin --password 123456 graph-clear -c I\'m\ sure\ to\ delete\ all\ data
